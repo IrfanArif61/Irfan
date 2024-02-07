@@ -1,57 +1,16 @@
 "use client";
 
-import { Card } from "@/components/ui/card";
-import {
-  ArrowRight,
-  Code,
-  ImageIcon,
-  MessageSquare,
-  Music,
-  VideoIcon,
-} from "lucide-react";
-
-import { cn } from "@/lib/utils";
+import { ArrowRight } from "lucide-react";
 import { useRouter } from "next/navigation";
 
-export const tools = [
-  {
-    label: "Conversation",
-    icon: MessageSquare,
-    color: "text-violet-500",
-    bgColor: "bg-violet-500/10",
-    href: "/conversation",
-  },
-  {
-    label: "Music Generation",
-    icon: Music,
-    color: "text-emerald-500",
-    bgColor: "bg-emerald-500/10",
-    href: "/music",
-  },
-  {
-    label: "Image Generation",
-    icon: ImageIcon,
-    color: "text-pink-700",
-    bgColor: "bg-emerald-700/10",
-    href: "/image",
-  },
-  {
-    label: "Video Generation",
-    icon: VideoIcon,
-    color: "text-orange-700",
-    bgColor: "bg-emerald-700/10",
-    href: "/video",
-  },
-  {
-    label: "Code Generation",
-    icon: Code,
-    color: "text-green-700",
-    bgColor: "bg-green-700/10",
-    href: "/code",
-  },
-];
-const DashboardPage = () => {
+import { Card } from "@/components/ui/card";
+import { cn } from "@/lib/utils";
+
+import { tools } from "@/constants";
+
+export default function HomePage() {
   const router = useRouter();
+
   return (
     <div>
       <div className="mb-8 space-y-4">
@@ -81,6 +40,4 @@ const DashboardPage = () => {
       </div>
     </div>
   );
-};
-
-export default DashboardPage;
+}
