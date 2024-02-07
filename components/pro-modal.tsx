@@ -16,7 +16,6 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { tools } from "@/constants";
-import { tools } from "@/app/(dashboard)/(routes)/dashboard/page";
 import { Card } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 
